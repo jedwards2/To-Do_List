@@ -176,18 +176,18 @@ function prioritySwitch(evt) {
 
   //sort list by priority
   let listObj = evt.target.listObj;
-  listObj.todo_list.sort(sortList);
+  listObj.sortByPriority();
   deleteTodos();
   renderTodos(evt.currentTarget.listObj.name);
 }
 
-function sortList(a, b) {
-  if (a.priority) {
-    return -1;
-  } else if (!a.priority) {
-    return 1;
-  }
-}
+// function sortList(a, b) {
+//   if (a.priority) {
+//     return -1;
+//   } else if (!a.priority) {
+//     return 1;
+//   }
+// }
 
 function newItemDiv(currentList) {
   let todo_list = document.getElementById("todo_list");
