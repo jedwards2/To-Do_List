@@ -1,0 +1,150 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container,
+#main {
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(72, 209, 255);
+  padding: 10px;
+  justify-content: center;
+  border: gray 1px solid;
+}
+
+#lists_header {
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#new_list_button {
+  width: 60%;
+  padding: 10px;
+  background-color: rgb(52, 137, 165);
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+#new_list_button:hover {
+  background-color: rgb(17, 148, 192);
+}
+
+#new_list_button:active {
+  border: 1px solid black;
+}
+
+#lists_div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+#newListPair {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#deleteButton {
+  background-color: none;
+  border: none;
+  background-color: rgb(79, 194, 232);
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+#deleteButton:hover {
+  background-color: rgb(17, 148, 192);
+}
+
+#deleteButton:active {
+  border: 1px solid black;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
+  background-color: rgb(79, 194, 232);
+  align-items: center;
+}
+
+#todo_list {
+  background-color: rgb(168, 222, 240);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 25px;
+}
+
+#new_list_form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+#close_list_form_button {
+  margin: 5px 0px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit_list_button {
+  margin-top: 10px;
+}
+
+#close_list_form_button:hover {
+  background-color: rgb(145, 4, 4);
+}
+
+#sidebar_button {
+  background-color: none;
+  border: none;
+  background-color: rgb(79, 194, 232);
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+#sidebar_button:hover {
+  background-color: rgb(17, 148, 192);
+}
+
+#sidebar_button:active {
+  border: 1px solid black;
+}
+
+#newItemDiv {
+  display: flex;
+  flex-direction: row;
+  border: black 1px solid;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#itemDiv {
+  display: flex;
+  flex-direction: row;
+  border: black 1px solid;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
